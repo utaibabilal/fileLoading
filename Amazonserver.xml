@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<office>
+  <Section Type="screen">
+    <TextBox ctrlType="TextBox" name="Trial" value="Utaiba" />
+    <ComboBox ctrlType="ComboBox" name="Resolution" value="1920X1080" item1="1920X1080" item2="10X10" />
+    <CheckBox ctrlType="CheckBox" name="tvBbutton" value="false" />
+    <StaticText ctrlType="StaticText" name="Version" value="4" />
+    <NumericUpdown ctrlType="NumericUpdown" name="Version" value="4" />
+    <MaskedTextBox ctrlType="MaskedTextBox" name="IP" value="200.0.0.16" masked="000.0.0.000" />
+    <GroupBox ctrlType="GroupBox" name="select" value="true" gpText="tv button" height="80" width="120" radio1="true" radio2="false" />
+    <TrackBar ctrlType="TrackBar" minBound="0" maxBound="10" value="9" name="frequency" tickFrequence="2" />
+    
+  </Section>
+  <Section Type="vancryst">
+     <Button ctrlType="Button" value="" name="Recorder" />
+  </Section>
+  
+  
+  <Maevex>
+    <view3>
+    </view3>
+    <view4>
+    </view4>
+  </Maevex>
+  <SMCC>
+    <SMCC-1 />
+  </SMCC>
+  <GMCC>
+    <GMCC-1 />
+    <GMCC-2 />
+  </GMCC>
+</office>
