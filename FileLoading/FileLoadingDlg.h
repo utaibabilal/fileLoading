@@ -3,10 +3,9 @@
 #include "string.h"
 #include <vector>
 #include <cstdlib>
-#include "Markup.h"
+#include"ConfigFileReader.h"
 using namespace std;
 
-//
 
 #pragma once
 
@@ -18,7 +17,7 @@ class CFileLoadingDlg : public CDialogEx
 public:
 	CFileLoadingDlg(CWnd* pParent = NULL);	// standard constructor
 
-	CMarkup xml;
+	//CMarkup xml;
 
 // Dialog Data
 	enum { IDD = IDD_FILELOADING_DIALOG };
@@ -38,13 +37,7 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
-
-	///===================variables=================
-	    int height;
-		int width;
-	//==============================================
 	afx_msg void OnBnClickedButtonload();
-	CString GetValueByName(CString strAttribute);
-	void GetScreenHeightAndWidth();
+	ConfigFileReader configReaderObj;
 	
 };

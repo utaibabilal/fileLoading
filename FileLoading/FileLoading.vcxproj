@@ -99,6 +99,7 @@
     <None Include="res\FileLoading.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConfigFileReader.h" />
     <ClInclude Include="FileLoading.h" />
     <ClInclude Include="FileLoadingDlg.h" />
     <ClInclude Include="Markup.h" />
@@ -107,6 +108,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ConfigFileReader.cpp" />
     <ClCompile Include="FileLoading.cpp" />
     <ClCompile Include="FileLoadingDlg.cpp" />
     <ClCompile Include="Markup.cpp" />

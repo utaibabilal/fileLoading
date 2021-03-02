@@ -62,8 +62,7 @@ CFileLoadingDlg::CFileLoadingDlg(CWnd* pParent /*=NULL*/)
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 
-	  height = 0;
-	  width  = 0;
+	
 }
 
 void CFileLoadingDlg::DoDataExchange(CDataExchange* pDX)
@@ -170,80 +169,20 @@ void CFileLoadingDlg::OnBnClickedButtonload()
 { 
 
 	 
-	  GetScreenHeightAndWidth();
+	 configReaderObj.GetScreenHeightAndWidth();
 
 	     CString strIp = "";
 	     CString strPort = "";
 	     CString strPosX = "";
 		 CString strPosY = "";
 
-	  strIp  = GetValueByName("IP");
-	 strPort = GetValueByName("PORT"); 
-     strPosX = GetValueByName("POSX");
-	 strPosY = GetValueByName("POSY");
+	 strIp   = configReaderObj.GetValueByName("IP");
+	 strPort = configReaderObj.GetValueByName("PORT"); 
+     strPosX = configReaderObj.GetValueByName("POSX");
+	 strPosY = configReaderObj.GetValueByName("POSY");
 
 	  
 	
 }
 
 
-CString CFileLoadingDlg::GetValueByName(CString strAttribute)
-{
-	CString filePath = "D:\\Amazonserver.xml";
-	xml.Load( filePath );
-	xml.ResetMainPos();
-
-	bool data = false;
-	CString strNameAttribute = "";
-	CString strAttributeValue = "";
-
-   while ( xml.FindElem("office") )
-   {
-			xml.IntoElem();		
-			while(xml.FindElem())
-			{
-				xml.IntoElem();	
-			 
-					while(xml.FindElem())
-					{
-						strNameAttribute =xml.GetAttrib("name");
-
-						if(strNameAttribute.CompareNoCase(strAttribute) == 0)
-						{
-						    strAttributeValue =  xml.GetAttrib("value"); 
-							break;
-						}
-					}	
-                 
-					xml.OutOfElem();
-					
-			}		
-   }	
-
-
-   return strAttributeValue;
-
-	
-   
-}  // end of function
-
-
-void CFileLoadingDlg:: GetScreenHeightAndWidth()
-{      
-	   int curPos = 0;
-	   CString strValue = "";
-	   strValue = GetValueByName("Resolution");
-	   
-	   CString resToken = (strValue.Tokenize(("X"), curPos));
-
-       height = atoi(resToken);
-
-	   while(!resToken.IsEmpty() && (curPos != resToken.GetLength()) )
-		{
-		   resToken = strValue.Tokenize(("X"), curPos);
-		   width = atoi(resToken);
-		   break;
-		   
-		}
-
-}
