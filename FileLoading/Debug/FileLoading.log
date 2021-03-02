@@ -1,17 +1,22 @@
-﻿Build started 3/1/2021 10:05:08 PM.
-     1>Project "D:\FileLoading\FileLoading\FileLoading\FileLoading.vcxproj" on node 2 (build target(s)).
+﻿Build started 3/2/2021 12:08:42 PM.
+     1>Project "D:\Bilal Git\fileLoading\FileLoading\FileLoading.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\FileLoading.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         All outputs are up-to-date.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\FileLoading.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt FileLoadingDlg.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\FileLoading.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\FileLoading.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt FileLoading.cpp FileLoadingDlg.cpp Markup.cpp
+         Markup.cpp
+         Note: MBCS build (not UTF-8)
          FileLoadingDlg.cpp
+         FileLoading.cpp
+         Generating Code...
        ResourceCompile:
-         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _AFXDLL /l"0x0409" /IDebug\ /nologo /fo"Debug\FileLoading.res" FileLoading.rc 
        ManifestResourceCompile:
-         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\FileLoading.exe.embed.manifest.res" Debug\FileLoading_manifest.rc 
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\FileLoading\FileLoading\Debug\FileLoading.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\FileLoading.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\FileLoading\FileLoading\Debug\FileLoading.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\FileLoading\FileLoading\Debug\FileLoading.lib" /MACHINE:X86 Debug\FileLoading.res
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Bilal Git\fileLoading\Debug\FileLoading.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\FileLoading.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Bilal Git\fileLoading\Debug\FileLoading.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Bilal Git\fileLoading\Debug\FileLoading.lib" /MACHINE:X86 Debug\FileLoading.res
          Debug\FileLoading.exe.embed.manifest.res
          Debug\FileLoading.obj
          Debug\FileLoadingDlg.obj
@@ -22,12 +27,12 @@
          All outputs are up-to-date.
        LinkEmbedManifest:
          All outputs are up-to-date.
-         FileLoading.vcxproj -> D:\FileLoading\FileLoading\Debug\FileLoading.exe
+         FileLoading.vcxproj -> D:\Bilal Git\fileLoading\Debug\FileLoading.exe
        FinalizeBuildStatus:
          Deleting file "Debug\FileLoading.unsuccessfulbuild".
          Touching "Debug\FileLoading.lastbuildstate".
-     1>Done Building Project "D:\FileLoading\FileLoading\FileLoading\FileLoading.vcxproj" (build target(s)).
+     1>Done Building Project "D:\Bilal Git\fileLoading\FileLoading\FileLoading.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.90
+Time Elapsed 00:00:37.88
