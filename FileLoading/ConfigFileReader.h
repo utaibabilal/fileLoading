@@ -10,7 +10,8 @@ public:
 	//==============================================
 	ConfigFileReader(void);
 	~ConfigFileReader(void);
-	CString GetValueByName(CString strAttribute);
-	void GetScreenHeightAndWidth();
+	CString GetValueByName(CString strAttribute);  //for gernal perpose attribute and value.  Rizwan   Lastwork
+	void GetScreenHeightAndWidth(); /// for getting screen resolution. Rizwan
+	void ConstructDataBaseString(CString strUname , CString strPassword , CString strServer);  // Rizwan
 };
 

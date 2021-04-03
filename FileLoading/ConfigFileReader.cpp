@@ -68,3 +68,19 @@ CString ConfigFileReader::GetValueByName(CString strAttribute)
 	
    
 }  // end of function
+
+void ConfigFileReader:: ConstructDataBaseString(CString strUname , CString strPassword , CString strServerName) // pass attribute e.g.(AmazonserverUsername , amazonserverPassword , amazoneServerName)
+{
+	CString strUN;  
+	CString strPw;
+	CString strServer;
+    
+    
+
+	strUN = GetValueByName(strUname);
+	strPw = GetValueByName(strPassword);
+	strServer = GetValueByName(strServerName);
+
+	/// concatinate them  in one sting accoring to desired format and return the final string
+
+}
